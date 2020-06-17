@@ -23,3 +23,5 @@ Todas las guías que he usado las puedes consultar en el documento PDF que esta 
 # Vale entendido, ¿como puedo probar el proyecto?
 
 La infraestructura básica que tienes que tener en tu ordenador es un entorno LAMP, una vez la tengas, solo tienes que cargar en la base de datos la información del fichero sql. Ese fichero se encargará de crear las tablas y usuarios pertinentes para que funcione perfectamente toda la aplicación.
+
+Una vez lo hayas hecho basta con que cojas el directorio raiz del proyecto y lo muevas a /var/www/html (y asignarle los permisos pertinentes de escritura) para que puedas empezar a ver funcionar la aplicación.
