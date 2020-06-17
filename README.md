@@ -11,7 +11,9 @@ Mi proyecto integrado consiste en la realización de una aplicación que permite
 La aplicación tendrá principalmente tres secciones, una para la administración, otra para usuarios no registrados y otra para usuarios registrados.
 
 • Usuarios no registrados: Pueden ver la cartelera, las tarifas, el contacto y la ubicación.
+
 • Usuarios Registrados: Tienen acceso al proceso de compra de entradas
+
 • Administrador: Puede dar de alta y eliminar películas de cartelera. Cambiar la cartelera con las películas que se proyectarán en cada sala y cambiar el precio de las tarifas.
 
 # ¿Puedo consultar alguna guía de usuario?
