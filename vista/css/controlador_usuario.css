@@ -1,0 +1,350 @@
+
+  /* Menu */
+
+  nav{
+      background-color: #447cad;
+    }
+
+    nav ul li a{
+      color:white;
+    }
+    nav ul li a:hover{
+      color:#44c767;
+    }
+
+    #campo_buscarTitulo{
+      width: 210px;
+    }
+
+    .boton_buscarPerfil {
+      background-color: #44c767;
+      border-radius: 13px;
+      border: 2px solid #78cc80;
+      display: inline-block;
+      cursor: pointer;
+      color:#ffffff;
+      font-family: Arial;
+      font-size: 15px;
+      padding: 3px 19px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #2f6627;
+    }
+
+    .boton_buscarPerfil:hover {
+      background-color:#5cbf2a;
+    }
+
+    .boton_buscarPerfil:active {
+      position:relative;
+      top:1px;
+    }
+
+    .formulario_buscarPerfil{
+      position: relative;
+      left: 98px;
+    }
+
+    .ui-autocomplete-row, .ui-autocomplete-row:hover{
+      padding:8px;
+      background-color: #f4f4f4;
+      border-bottom:1px solid #ccc;
+      font-weight:bold;
+    }
+
+    .boton_desplegable{
+      border: 1px solid;
+      color: black;
+      width: 200px;
+      background-color: white;
+    }
+    .boton_desplegable:hover{
+      background-color: white;
+    }
+    .boton_desplegable span{
+      color: black;
+    }
+    .menu_opciones{
+      width:200px;
+      text-align: center;
+      font-size: 17px
+    }
+
+    .dropdown ul li a{
+      color: black;
+    }
+    .logotipo_menu{
+      margin-top: -11px;
+      width: 145px;
+    }
+
+    @media screen and (max-width: 976px) {
+      .navbar-toggler {
+        background-color: white;
+      }
+
+      .formulario_buscarPerfil{
+        position: relative;
+        left: 0px;
+      }
+      .boton_desplegable{
+        position: relative;
+        left: 0px;
+      }
+      .boton_buscarPerfil{
+        width: 100%;
+        margin-bottom: 26px;
+      }
+      #campo_buscarTitulo{
+        width: 100%;
+      }
+      .navbar-nav .dropdown-menu{
+        width: 100%;
+      }
+      .btn-secondary.dropdown-toggle{
+        width: 100%;
+        margin-top: -16px;
+      }
+
+      .navbar-nav{
+        letter-spacing: 2px;
+      }
+    }
+
+ 
+ /* Pagina */
+
+     body{
+    background-image: url(../imagenes/varios/imagen_fondo.jpg);
+    background-position: center top;
+    background-repeat: repeat;
+  }
+    .container{
+      width: 100%;
+      border: 1px solid #A0A0A0;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: #ffffff;
+      cursor: auto;
+      box-shadow: 0 0 20px rgba(90, 90, 90, 0.75);
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+  .btn-primary{
+    width: 190px;
+    height: 46px;
+  }
+  .btn-danger{
+    position: relative;
+    width: 151px;
+    height: 46px;
+  }
+  .hidden{
+    visibility: hidden;
+  }
+
+  .opciones_disponibles{
+    position: relative;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .icono_tuerca{
+    font-size: 24px;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    color: #ff8b00;
+  }
+
+  .card-body{
+    padding: 0em;
+  }
+  
+
+  /* EL FORMULARIO TIPO TEXTO TE SALIA DE LA TABLA EN FORMATO MÓVILES, CON ESTO LO SOLUCIONAS */
+   input[type="text"],input[type="number"],input[type="email"],input[type="password"],input[type="file"],input[type="url"] {
+    width: 100%; 
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  /* CONCEPTO DE TABLA RESPONSIVA, SE TRANSFORMA EN VISTA
+  MOVILES, PASANDO DE SER UNA TABLA A UNA LISTA APAISADA */
+  .tabla_perfil { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+  .tabla_perfil tr:nth-of-type(odd) { 
+  background: #eee; 
+  }
+  .tabla_perfil th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+  }
+  .tabla_perfil td, .tabla_perfil th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: center; 
+  }
+
+@media only screen and (max-width: 2000px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+  .tabla_perfil, .tabla_perfil thead, .tabla_perfil tbody, .tabla_perfil th, .tabla_perfil td, .tabla_perfil tr { 
+    display: block; 
+  }
+  .tabla_perfil thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .tabla_perfil tr { border: 1px solid #ccc; }
+  .tabla_perfil td { 
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+  }
+  
+  .tabla_perfil td:before { 
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+  .tabla_perfil td:nth-of-type(1):before { content: "Nombre"; }
+  .tabla_perfil td:nth-of-type(2):before { content: "Apellidos"; }
+  .tabla_perfil td:nth-of-type(3):before { content: "Dni"; }
+  .tabla_perfil td:nth-of-type(4):before { content: "Edad"; }
+  .tabla_perfil td:nth-of-type(5):before { content: "Sexo"; }
+  .tabla_perfil td:nth-of-type(6):before { content: "Correo"; }
+}
+
+/*
+TABLA HISTORIAL, ES LA MISMA QUE LA DE PERFIL PERO CON LIGEROS
+RETOQUES PARA HACERLA RESPONSIVE Y ACORDE CON LA TEMÁTICA DEL HISTORIAL.
+ES LA MISMA PERO CON RETOQUES A PORCENTAJES
+*/
+
+.tabla_historial { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+.tabla_historial img{
+  position: relative;
+  left: -121px;
+  height: 178px;
+  width: 142px;
+}
+/* Zebra striping */
+  .tabla_historial tr:nth-of-type(odd) { 
+  background: #eee; 
+  }
+  .tabla_historial th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+  }
+  .tabla_historial td, .tabla_historial th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: center; 
+  }
+/* ESTA DIFERENCIA DE PIXELES ES PARA MOVILES
+   QUE LA IMAGEN SE QUEDA DESCENTRADA */
+@media screen and (max-width: 992px){ 
+  .tabla_historial img{
+  left: -73px;
+  }
+}
+
+@media only screen and (max-width: 2000px), (min-device-width: 668px) and (max-device-width: 1024px)  {
+  .tabla_historial, .tabla_historial thead, .tabla_historial tbody, .tabla_historial th, .tabla_historial td, .tabla_historial tr { 
+    display: block; 
+  }
+  
+
+  .tabla_historial thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .tabla_historial tr { border: 1px solid #ccc; }
+  .tabla_historial td { 
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+  }
+  
+  .tabla_historial td:before { 
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+  .tabla_historial td:nth-of-type(2):before { content: "Sala"; }
+  .tabla_historial td:nth-of-type(3):before { content: "Hora"; }
+  .tabla_historial td:nth-of-type(4):before { content: "Tickets comprados"; }
+  .tabla_historial td:nth-of-type(5):before { content: "Tarifa aplicada"; }
+  .tabla_historial td:nth-of-type(6):before { content: "Precio Total"; }
+}
+
+
+
+/* footer */
+
+.autor{
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+footer#pie_pagina{
+  padding:20px 0 10px;
+  max-width:1200px;
+  margin:0 auto;
+  display:block;
+  clear:both;
+  background:#161f22;
+}
+
+
+footer#pie_pagina #inner-footer {
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+}
+
+footer#pie_pagina #inner-footer h2 {
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  font-family: Oswald,helvetica,arial,sans-serif;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  text-shadow: none;
+}
+
+
+footer#pie_pagina #inner-footer .copyright,footer#pie_pagina #inner-footer .copyright p {
+  font-family: 'Helvetica Neue',Verdana,'Lucida Grande',Arial,sans-serif;
+  color: #666;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.25em;
+}
+
+footer#pie_pagina{
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-bottom: -13px;
+}

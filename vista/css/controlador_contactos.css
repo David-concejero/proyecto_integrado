@@ -1,0 +1,296 @@
+
+  /* Menu */
+
+  nav{
+      background-color: #447cad;
+    }
+
+    nav ul li a{
+      color:white;
+    }
+    nav ul li a:hover{
+      color:#44c767;
+    }
+
+    #campo_buscarTitulo{
+      width: 210px;
+    }
+
+    .boton_buscarPerfil {
+      background-color: #44c767;
+      border-radius: 13px;
+      border: 2px solid #78cc80;
+      display: inline-block;
+      cursor: pointer;
+      color:#ffffff;
+      font-family: Arial;
+      font-size: 15px;
+      padding: 3px 19px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #2f6627;
+    }
+
+    .boton_buscarPerfil:hover {
+      background-color:#5cbf2a;
+    }
+
+    .boton_buscarPerfil:active {
+      position:relative;
+      top:1px;
+    }
+
+    .formulario_buscarPerfil{
+      position: relative;
+      left: 98px;
+    }
+
+    .ui-autocomplete-row, .ui-autocomplete-row:hover{
+      padding:8px;
+      background-color: #f4f4f4;
+      border-bottom:1px solid #ccc;
+      font-weight:bold;
+    }
+
+    .boton_desplegable{
+      border: 1px solid;
+      color: black;
+      width: 200px;
+      background-color: white;
+    }
+    .boton_desplegable:hover{
+      background-color: white;
+    }
+    .boton_desplegable span{
+      color: black;
+    }
+    .menu_opciones{
+      width:200px;
+      text-align: center;
+      font-size: 17px
+    }
+
+    .dropdown ul li a{
+      color: black;
+    }
+    .logotipo_menu{
+      margin-top: -11px;
+      width: 145px;
+    }
+
+    @media screen and (max-width: 976px) {
+      .navbar-toggler {
+        background-color: white;
+      }
+
+      .formulario_buscarPerfil{
+        position: relative;
+        left: 0px;
+      }
+      .boton_desplegable{
+        position: relative;
+        left: 0px;
+      }
+      .boton_buscarPerfil{
+        width: 100%;
+        margin-bottom: 26px;
+      }
+      #campo_buscarTitulo{
+        width: 100%;
+      }
+      .navbar-nav .dropdown-menu{
+        width: 100%;
+      }
+      .btn-secondary.dropdown-toggle{
+        width: 100%;
+        margin-top: -16px;
+      }
+
+      .navbar-nav{
+        letter-spacing: 2px;
+      }
+    }
+
+
+/* Carousel */
+
+.carousel .carousel-item {
+      min-height: 400px;
+    }
+  .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+  }
+
+  .carousel{
+    padding-top: 10px;
+  }
+
+  @media screen and (max-width: 976px) {
+    /* Las imagenes del carousel cambian dependiendo del dispositivo, he realiazdo este
+    cambio porque en móviles no se podía leer correctamente las letras al ser la
+    imagen muy pequeña */
+    .imagen_carousel1{
+      content:url("../imagenes/varios/banner_joker_moviles.jpg");
+    }
+    .imagen_carousel2{
+      content:url("../imagenes/varios/banner_1917_moviles.jpg");
+    }
+    .imagen_carousel3{
+      content:url("../imagenes/varios/banner_it2_moviles.jpg");
+    }
+  }
+
+/* Carousel */
+
+.carousel .carousel-item {
+      min-height: 400px;
+    }
+  .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+  }
+
+  .carousel{
+    padding-top: 10px;
+  }
+
+  @media screen and (max-width: 976px) {
+    /* Las imagenes del carousel cambian dependiendo del dispositivo, he realiazdo este
+    cambio porque en móviles no se podía leer correctamente las letras al ser la
+    imagen muy pequeña */
+    .imagen_carousel1{
+      content:url("../imagenes/varios/banner_joker_moviles.jpg");
+    }
+    .imagen_carousel2{
+      content:url("../imagenes/varios/banner_1917_moviles.jpg");
+    }
+    .imagen_carousel3{
+      content:url("../imagenes/varios/banner_it2_moviles.jpg");
+    }
+  }
+
+
+
+ /* Pagina */
+
+   body{
+    background-image: url(../imagenes/varios/imagen_fondo.jpg);
+    background-position: center top;
+    background-repeat: repeat;
+  }
+  .container{background-color: white}
+
+
+  .fondo_contactos{
+    margin: 10px 12px 15px 5px;
+    font: 13px/1.231 Arial, sans-serif;
+  }
+
+  h1{
+    margin: 0;
+    border-bottom: 4px solid #BA2E29;
+    font-family: Oswald,helvetica,arial,sans-serif;
+  }
+  h1 span{
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    background: #BA2E29;
+  }
+
+  .container{
+      width: 100%;
+      border: 1px solid #A0A0A0;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: #ffffff;
+      cursor: auto;
+      box-shadow: 0 0 20px rgba(90, 90, 90, 0.75);
+    }
+
+  hr{
+    background-color: #447cad;
+  }
+
+  .informacion_contacto h3{
+    font-size: 20px;
+  }
+
+  .informacion_contacto ul{
+    list-style-type: none;
+  }
+
+  .icono_normal{
+    font-size: 20px;
+    color: orange;
+  }
+  .icono_redesSociales{
+    font-size: 30px;
+    color: blue;
+  }
+
+  /* Version móvil, iconos de redes sociales mas grandes y título centrado */
+  @media screen and (max-width: 976px) {
+      .fondo_contactos h3{
+        text-align: center
+      }
+
+      .informacion_contacto .icono_redesSociales{
+        font-size: 40px
+      }
+
+    }
+
+/* footer */
+
+.autor{
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+footer#pie_pagina{
+  padding:20px 0 10px;
+  max-width:1200px;
+  margin:0 auto;
+  display:block;
+  clear:both;
+  background:#161f22;
+}
+
+
+footer#pie_pagina #inner-footer {
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+}
+
+footer#pie_pagina #inner-footer h2 {
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  font-family: Oswald,helvetica,arial,sans-serif;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  text-shadow: none;
+}
+
+
+footer#pie_pagina #inner-footer .copyright,footer#pie_pagina #inner-footer .copyright p {
+  font-family: 'Helvetica Neue',Verdana,'Lucida Grande',Arial,sans-serif;
+  color: #666;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.25em;
+}
+
+footer#pie_pagina{
+  margin-left: -16px;
+  margin-right: -16px;
+}

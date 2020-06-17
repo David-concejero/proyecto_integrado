@@ -1,0 +1,421 @@
+
+  /* Menu */
+
+  nav{
+      background-color: #447cad;
+    }
+
+    nav ul li a{
+      color:white;
+    }
+    nav ul li a:hover{
+      color:#44c767;
+    }
+
+    #campo_buscarTitulo{
+      width: 210px;
+    }
+
+    .boton_buscarPerfil {
+      background-color: #44c767;
+      border-radius: 13px;
+      border: 2px solid #78cc80;
+      display: inline-block;
+      cursor: pointer;
+      color:#ffffff;
+      font-family: Arial;
+      font-size: 15px;
+      padding: 3px 19px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #2f6627;
+    }
+
+    .boton_buscarPerfil:hover {
+      background-color:#5cbf2a;
+    }
+
+    .boton_buscarPerfil:active {
+      position:relative;
+      top:1px;
+    }
+
+    .formulario_buscarPerfil{
+      position: relative;
+      left: 98px;
+    }
+
+    .ui-autocomplete-row, .ui-autocomplete-row:hover{
+      padding:8px;
+      background-color: #f4f4f4;
+      border-bottom:1px solid #ccc;
+      font-weight:bold;
+    }
+
+    .boton_desplegable{
+      border: 1px solid;
+      color: black;
+      width: 200px;
+      background-color: white;
+    }
+    .boton_desplegable:hover{
+      background-color: white;
+    }
+    .boton_desplegable span{
+      color: black;
+    }
+    .menu_opciones{
+      width:200px;
+    }
+
+    .dropdown ul li a{
+      color: black;
+    }
+    .logotipo_menu{
+      margin-top: -11px;
+      width: 145px;
+    }
+
+    @media screen and (max-width: 976px) {
+      .navbar-toggler {
+        background-color: white;
+      }
+
+      .formulario_buscarPerfil{
+        position: relative;
+        left: 0px;
+      }
+      .boton_desplegable{
+        position: relative;
+        left: 0px;
+      }
+      .boton_buscarPerfil{
+        width: 100%;
+        margin-bottom: 26px;
+      }
+      #campo_buscarTitulo{
+        width: 100%;
+      }
+      .navbar-nav .dropdown-menu{
+        width: 100%;
+      }
+      .btn-secondary.dropdown-toggle{
+        width: 100%;
+        margin-top: -16px;
+      }
+
+      .navbar-nav{
+        letter-spacing: 2px;
+      }
+    }
+
+ 
+ /* 
+
+  Página apartado Login / Registro
+  
+  CSS COMÚN
+
+*/
+      
+  .fondo_pagina{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -50px;
+  }
+
+  .container_formulario{
+    width: 100%;  
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #9053c7;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+  }
+
+  .titulo_formulario{
+    font-family: Poppins-Bold;
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 54px;
+  }
+
+  .wrap_efectos{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 10px;
+  }
+
+  .efecto_focus{
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: rgba(87,184,70, 0.8);
+  }
+
+
+  .aspecto_input_normal:focus + .efecto_focus {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+  }
+
+  .aspecto_input_normal:focus + .efecto_focus + .efecto_simbolo_login {
+    color: #57b846;
+    padding-left: 28px;
+  }
+
+  .aspecto_input_normal:focus + .efecto_focus + .efecto_simbolo_registro {
+    color: #57b846;
+    padding-left: 28px;
+  }
+
+  .aspecto_input_normal {
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 68px;
+  }
+
+  .aspecto_input_select{
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    height: 50px;
+    padding: 0 30px 0 68px;
+  }
+
+
+
+  .subtitulo{
+    font-family: Poppins-Bold;
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 11px;
+  }
+
+  input[type=number]{
+    -moz-appearance: textfield;
+  }
+
+  @-webkit-keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 70px 25px;
+      opacity: 0;
+    }
+  }
+
+  @keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 70px 25px;
+      opacity: 0;
+    }
+  }
+
+  .container_botonSubmit {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .aspecto_botonSubmit {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: #57b846;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    cursor: pointer;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .aspecto_botonSubmit:hover {
+    background-color: #0ce141;
+  }
+
+  .iconos{
+    font-size: 19px;
+  }
+
+  @media (max-width: 976px) {
+    .iconos {
+      font-size: 25px;
+    }
+
+    .aspecto_input_normal{
+      width: 100%;
+    }
+  }
+
+/* 
+
+  [Apartado Login]
+
+*/
+  .wrap_login{
+    width: 960px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 57px 130px 33px 95px;
+  }
+
+  .efecto_simbolo_login{
+    font-size: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 35px;
+    pointer-events: none;
+    color: #666666;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+
+  .foto_login {
+    width: 316px;
+  }
+  .foto_login img {
+    max-width: 100%;
+  }
+  @media (max-width: 976px) {
+    .foto_login {
+      display: none;
+    }
+
+    .wrap_login{
+      padding: 100px 15px 33px 15px;
+    }
+  }
+
+/*
+
+  [Apartado Registro]  
+
+*/
+  .wrap_registro{
+    width: 960px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 57px 104px 33px 95px;
+  }
+
+  .efecto_simbolo_registro{
+    font-size: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: -6px;
+    width: 100%;
+    height: 100%;
+    padding-left: 35px;
+    pointer-events: none;
+    color: #666666;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .campo_usuario{
+    margin-top: 23px
+  }
+
+  .wrap_registro form{
+    width:100%;
+  }
+  @media (max-width: 976px) {
+    .wrap_registro {
+      padding: 100px 15px 33px 15px;
+    }
+    .campo_usuario{
+      margin-top: 0px;
+    }
+  }
