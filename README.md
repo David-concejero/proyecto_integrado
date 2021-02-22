@@ -24,7 +24,7 @@ La aplicación tendrá principalmente tres secciones, una para la administració
 
 * **Administrador:** Es el administrador del sitio. Puede agregar películas nuevas, crear nuevos estrenos, eliminar películas, cambiar el precio de las tarifas..etc
 
-Para mas información puedes consultar el [manual de usuario](https://github.com/David-concejero/proyecto_integrado/blob/master/Manual.pdf) que hay subido en el repositorio.
+Para mas información puedes consultar el [manual de usuario](https://github.com/David-concejero/proyecto_integrado/blob/master/Manual%20Version%20Web.pdf) que hay subido en el repositorio.
 
 # Requisitos uso proyecto
 
