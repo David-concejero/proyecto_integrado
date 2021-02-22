@@ -8,6 +8,10 @@ Este proyecto se ha desarrollado para el final de curso del grado de desarrollo 
 
 El proyecto final de curso se basa en el desarrollo de una aplicación que permita al usuario emular la compra/reserva de entradas para las salas de un negocio. En este caso, el negocio es un cine. En él el usuario se puede registrar en el sistema, comprar películas para un día determinado, una vez vista la película puede escribir una reseña y por último este recibe en su correo electrónico personal un ticket con los datos relacionados al estreno que ha comprado previamente.
 
+La generación de tickets la he realizado mediante el uso de la librería 'mpdf', que nos permite transformar código html a pdf. Y en envío de correos electrónicos usando otra librería llamada 'phpmailer'.
+
+![Generacion de tickets](https://i.imgur.com/q0ewCeD.png)
+
 # :hammer: ¿Que podemos hacer dentro de la aplicación?
 
 La aplicación tendrá principalmente tres secciones, una para la administración, otra para usuarios no registrados y otra para usuarios registrados.
