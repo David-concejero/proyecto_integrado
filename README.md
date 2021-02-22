@@ -1,27 +1,29 @@
-# Proyecto integrado
+# Proyecto Final de Curso :mortar_board:
 
-Este es el proyecto final de curso de desarrollo de aplicaciones web realizado por David Concejero Hernández. 
+Este proyecto se ha desarrollado para el final de curso del grado de desarrollo de aplicaciones web 2018~2020. Todo el proyecto ha sido realizado por David Concejero Hernández.
 
-# ¿En qué consiste el proyecto?
+# :question: ¿De que trata el proyecto?
 
-Mi proyecto integrado consiste en la realización de una aplicación que permite reservar de forma online entradas para las salas de un cine en concreto. Para realizar dichas reservas el usuario debe estar registrado en la aplicación. 
+El proyecto final de curso se basa en el desarrollo de una aplicación que permita al usuario emular la compra/reserva de entradas para las salas de un negocio. En este caso, el negocio es un cine. En él el usuario se puede registrar en el sistema, comprar películas para un día determinado, una vez vista la película puede escribir una reseña y por último este recibe en su correo electrónico personal un ticket con los datos relacionados al estreno que ha comprado previamente.
 
-# ¿Cual es la estructura de la aplicación?
+# :hammer: ¿Que podemos hacer dentro de la aplicación?
 
 La aplicación tendrá principalmente tres secciones, una para la administración, otra para usuarios no registrados y otra para usuarios registrados.
 
-• Usuarios no registrados: Pueden ver la cartelera, las tarifas, el contacto y la ubicación.
+* **Usuarios no registrados:** Estos pueden ver la cartelera, las tarifas expuestas en el cine y las reseñas de otros usuarios. No pueden comprar tickets. 
 
-• Usuarios Registrados: Tienen acceso al proceso de compra de entradas
+* **Usuarios Registrados:** Estos usuarios tienen acceso completo a la aplicación. Pueden comprar entradas y hacer reseñas de las películas que han visto. 
 
-• Administrador: Puede dar de alta y eliminar películas de cartelera. Cambiar la cartelera con las películas que se proyectarán en cada sala y cambiar el precio de las tarifas.
+* **Administrador:** Es el administrador del sitio. Puede agregar películas nuevas, crear nuevos estrenos, eliminar películas, cambiar el precio de las tarifas..etc
 
-# ¿Puedo consultar alguna guía de usuario?
+Para mas información puedes consultar el [manual de usuario](https://github.com/David-concejero/proyecto_integrado/blob/master/Manual.pdf) que hay subido en el repositorio.
 
-Todas las guías que he usado las puedes consultar en el documento PDF que esta subido en el repositorio.
+# Requisitos uso proyecto
 
-# Vale entendido, ¿como puedo probar el proyecto?
+Para usar este proyecto necesitas configurar previamente dos aspectos fundamentales:
 
-La infraestructura básica que tienes que tener en tu ordenador es un entorno LAMP, una vez la tengas, solo tienes que cargar en la base de datos la información del fichero sql. Ese fichero se encargará de crear las tablas y usuarios pertinentes para que funcione perfectamente toda la aplicación.
+* Instalar la infraestructura LAMP
 
-Una vez lo hayas hecho basta con que cojas el directorio raiz del proyecto y lo muevas a /var/www/html (y asignarle los permisos pertinentes de escritura) para que puedas empezar a ver funcionar la aplicación.
+* Instalar Mysql y cargar la base de datos del repositorio.
+
+Una vez tengas su servidor apache funcionando lo único que tienes que hacer es coger el directorio raiz del proyecto y moverlo a /var/www/html. Asignarle permisos de escritura (para la generación del ticket de usuario) y ya esta.
