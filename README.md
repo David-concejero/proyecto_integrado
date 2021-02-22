@@ -12,6 +12,8 @@ La generación de tickets la he realizado mediante el uso de la librería 'mpdf'
 
 ![Generacion de tickets](https://i.imgur.com/q0ewCeD.png)
 
+Cabe destacar que todo el diseño de mi página es responsive y puede ser usada desde el teléfono móvil.
+
 # :hammer: ¿Que podemos hacer dentro de la aplicación?
 
 La aplicación tendrá principalmente tres secciones, una para la administración, otra para usuarios no registrados y otra para usuarios registrados.
