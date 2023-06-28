@@ -1,6 +1,6 @@
 # Proyecto Final de Curso :mortar_board:
 
-Este proyecto se ha desarrollado para el final de curso del grado de desarrollo de aplicaciones web 2018~2020. Todo el proyecto ha sido realizado por David Concejero Hernández.
+Este proyecto se ha desarrollado para el final de curso del grado de desarrollo de aplicaciones web. Todo el proyecto ha sido realizado por David Concejero Hernández.
 
 ![Imagen del proyecto](https://i.imgur.com/kuZvuCl.png)
 
